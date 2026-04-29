@@ -7,6 +7,7 @@
 ## Стратегия и контекст
 
 - `../AGENTS.md` — описание проекта, цели команды, контекст и ограничения. **Читать первым.**
+- `concept.md` — общее описание концепции и связей сервиса (суть продукта, действующие стороны, базовые сценарии, дорожная карта, ценность для каждой стороны). Хорошая точка входа для нового разработчика **сразу после AGENTS.md**.
 - `architecture.md` — архитектура продукта (верхний уровень) + высоконагруженная архитектура серверной платформы ESD ServiceDesk (микросервисы, инфраструктура, REUSE/UPGRADE/NEW vs pass24-servicedesk).
 - `adr.md` — архитектурные решения. Шесть записей: ADR-001 (запуск ЕСД отдельным юрлицом), ADR-002 (стек), ADR-003 (тарифная модель), ADR-004 (стратегия Госуслуги.Дом-only), ADR-005 (audit XAdES-T), ADR-006 (RBAC и роли).
 
@@ -48,9 +49,9 @@
 
 | Роль | Что читать |
 |---|---|
-| Новый разработчик | `AGENTS.md` → `architecture.md` → `adr.md` → `functional-spec.md` → `data-model.md` → `api-map.md` |
-| Архитектор / Tech Lead | `architecture.md` + `load-profile.md` + `adr.md` + `data-model.md` |
-| Продакт / PM | `architecture.md` (раздел Roadmap) + `functional-matrix.md` + `operations-playbooks.md` (тарифная модель — в `NDA/tariff-model.md`) |
+| Новый разработчик | `AGENTS.md` → `concept.md` → `architecture.md` → `adr.md` → `functional-spec.md` → `data-model.md` → `api-map.md` |
+| Архитектор / Tech Lead | `concept.md` + `architecture.md` + `load-profile.md` + `adr.md` + `data-model.md` |
+| Продакт / PM | `concept.md` + `architecture.md` (раздел Roadmap) + `functional-matrix.md` + `operations-playbooks.md` (тарифная модель — в `NDA/tariff-model.md`) |
 | Юрист / Compliance | `regulatory-roadmap.md` + `adr.md` ADR-004/005 + `risks-register.md` |
 | GR / Public Affairs | `regulatory-roadmap.md` + `adr.md` ADR-004 + `operations-playbooks.md` (плейбук подключения партнёра) |
 | HR / Recruiter, Финансист / CFO, Инвестор | работают только с NDA-материалами (`NDA/team-plan.md`, `NDA/tariff-model.md`, `NDA/financial-model.md`, `NDA/investment-plan.md`) — этот репозиторий им не нужен |
